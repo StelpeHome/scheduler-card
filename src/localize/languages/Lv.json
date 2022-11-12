@@ -1,0 +1,217 @@
+{
+    "services": {
+      "generic": {
+        "parameter_to_value": "{parameter} uz {value}",
+        "action_with_parameter": "{action} ar {parameter}"
+      },
+      "climate": {
+        "set_temperature": "iestatīt temperatūru[ uz {temperature}]",
+        "set_temperature_hvac_mode_heat": "sildīt[ līdz {temperature}]",
+        "set_temperature_hvac_mode_cool": "cool[ to {temperature}]",
+        "set_temperature_hvac_mode_heat_cool": "regulate[ to {target_temp_low} - {target_temp_high}]",
+        "set_hvac_mode": "set mode[ to {hvac_mode}]",
+        "set_preset_mode": "nomainīt režīmu[ uz {preset_mode}]",
+        "set_fan_mode": "set fan mode[ to {fan_mode}]"
+      },
+      "cover": {
+        "close_cover": "aivērt",
+        "open_cover": "atvērt",
+        "set_cover_position": "set position[ to {position}]",
+        "set_cover_tilt_position": "set tilt position[ to {tilt_position}]"
+      },
+      "fan": {
+        "set_speed": "set speed[ to {speed}]",
+        "set_direction": "set direction[ to {direction}]",
+        "oscillate": "set oscillation[ to {oscillate}]"
+      },
+      "humidifier": {
+        "set_humidity": "set humidity[ to {humidity}]",
+        "set_mode": "set mode[ to {mode}]"
+      },
+      "input_number": {
+        "set_value": "iestatīt vērtību[ uz {value}]"
+      },
+      "input_select": {
+        "select_option": "izvēlēties opciju[ {option}]"
+      },
+      "select": {
+        "select_option": "izvēlēties opciju[ {option}]"
+      },
+      "light": {
+        "turn_on": "turn on[ with {brightness} brightness]"
+      },
+      "media_player": {
+        "select_source": "select source[ {source}]"
+      },
+      "notify": {
+        "notify": "nosūtīt paziņojumu"
+      },
+      "script": {
+        "script": "izpildīt"
+      },
+      "vacuum": {
+        "start_pause": "sākt / pauze"
+      },
+      "water_heater": {
+        "set_operation_mode": "iestatīt režīmu [ uz {operation_mode}]",
+        "set_away_mode": "iestatīt prombūtnes režīmu"
+      }
+    },
+    "domains": {
+      "alarm_control_panel": "alarm control panel",
+      "binary_sensor": "binary sensors",
+      "climate": "klimats",
+      "cover": "covers",
+      "fan": "fans",
+      "group": "vienību grupas",
+      "humidifier": "humidifiers",
+      "input_boolean": "input boolean",
+      "input_number": "input number",
+      "input_select": "ievades atlase",
+      "light": "lights",
+      "lock": "locks",
+      "media_player": "media players",
+      "notify": "paziņojumi",
+      "switch": "slēdži",
+      "vacuum": "putekļsūcēji",
+      "water_heater": "boileris"
+    },
+    "ui": {
+      "components": {
+        "date": {
+          "day_types_short": {
+            "daily": "katru dienu",
+            "workdays": "darba dienās",
+            "weekend": "nedēļas nogalē"
+          },
+          "day_types_long": {
+            "daily": "katru dienu",
+            "workdays": "darba dienās",
+            "weekend": "nedēļas nogalē"
+          },
+          "days": "dienas",
+          "tomorrow": "rīt",
+          "repeated_days": "katru {days}",
+          "repeated_days_except": "katru dienu izņemot {excludedDays}",
+          "days_range": "no {startDay} līdz {endDay}",
+          "next_week_day": "nākošo {weekday}"
+        },
+        "time": {
+          "absolute": "pulksten {time}",
+          "interval": "no {startTime} līdz {endTime}",
+          "at_midnight": "pusnaktī",
+          "at_noon": "pusdienlaikā",
+          "at_sun_event": "{sunEvent}"
+        }
+      },
+      "dialog": {
+        "enable_schedule": {
+          "title": "Pabeigt modifikāciju",
+          "description": "Jūsu izmainītais grafiks pašlaik ir atspējots. Vai vēlaties to iespējot?"
+        }
+      },
+      "panel": {
+        "common": {
+          "title": "Plānotājs"
+        },
+        "overview": {
+          "no_entries": "Nav neviena vienuma, ko parādīt",
+          "backend_error": "Nevarēja izveidot savienojumu ar plānotāja komponentu. Pirms šīs kartes izmantošanas tā ir jāinstalē kā integrācija.",
+          "excluded_items": "{number} izslēgts {if number is 1} vienums {else} vienumi",
+          "hide_excluded": "paslēpt izslēgtos vienumus",
+          "additional_tasks": "{number} vairāk {if number is 1} uzdevums {else} uzdevumi"
+        },
+        "entity_picker": {
+          "no_groups_defined": "Nav definētu grupu",
+          "no_group_selected": "Vispirms atlasiet grupu",
+          "no_entities_for_group": "Šajā grupā nav vienību",
+          "no_entity_selected": "Vispirms atlasiet vienību",
+          "no_actions_for_entity": "Šai vienībai nav darbību",
+          "make_scheme": "izveidot grafiku",
+          "multiple": "Vairāki"
+        },
+        "time_picker": {
+          "no_timeslot_selected": "Vispirms izvēlieties laika posmu",
+          "time_scheme": "Grafiks",
+          "time_input_mode": "Time control mode"
+        },
+        "conditions": {
+          "equal_to": "ir vienāds ar",
+          "unequal_to": "nav vienāds ar",
+          "all": "visi",
+          "any": "jebkurš",
+          "no_conditions_defined": "Nav definēts neviens nosacījums",
+          "track_conditions": "Pārvērtēt, kad apstākļi mainās"
+        },
+        "options": {
+          "repeat_type": "uzvedība pēc pabeigšanas",
+          "period": "periods"
+        },
+        "card_editor": {
+          "tabs": {
+            "entities": "Vienības",
+            "other": "Cits"
+          },
+          "fields": {
+            "title": {
+              "heading": "Kārts nosuakums",
+              "options": {
+                "standard": "standarta",
+                "hidden": "paslēpta",
+                "custom": "pielāgota"
+              },
+              "custom_title": "Pielāgot nosaukumu"
+            },
+            "discover_existing": {
+              "heading": "Rādīt visus grafikus",
+              "description": "This sets the 'discover existing' parameter. Previously created schedules will be automatically added to the card. "
+            },
+            "time_step": {
+              "heading": "Laika solis",
+              "description": "Resolution (in minutes) for creating schedules"
+            },
+            "sort_by": {
+              "heading": "Šķirošanas iespējas",
+              "description": "Kārtība, kādā grafiki parādās kārtī",
+              "options": {
+                "relative_time": "Atlikušais laiks līdz nākamajai darbībai",
+                "title": "Parādīt grafika nosaukums",
+                "state": "Rādīt aktīvos grafikus augšpusē"
+              }
+            },
+            "display_format_primary": {
+              "heading": "Parādīta primārā informācija",
+              "description": "Konfigurēt kura iezīme tiks izmantota grafikiem pārskatā",
+              "options": {
+                "default": "Grafika nosaukums",
+                "entity_action": "Uzdevuma kopsavilkums"
+              }
+            },
+            "display_format_secondary": {
+              "heading": "Parādītā sekundārā informācija",
+              "description": "Konfigurēt, kāda papildu informācija ir redzami pārskatā",
+              "options": {
+                "relative_time": "Atlikušais laiks līdz nākamajai darbībai",
+                "time": "Nākamās darbības izpildes laiks",
+                "days": "Atkārtotas nedēļas dienas",
+                "additional_tasks": "Papildu uzdevumu skaits"
+              }
+            },
+            "show_header_toggle": {
+              "heading": "Rādīt galvenes slēdzi",
+              "description": "Rādīt pārslēgšanas slēdzi kārts augšpusē, lai iespējotu/iespējotu visas vienības"
+            },
+            "tags": {
+              "heading": "Birkas",
+              "description": "Izmantojiet atzīmes, lai sadalītu grafikus starp vairākām kārtīm"
+            },
+            "entities": {
+              "heading": "Iekļāutās vienības",
+              "description": "Atlasiet vienības, kuras vēlaties kontrolēt, izmantojot plānotāju. Varat noklikšķināt uz grupas, lai to atvērtu. Ņemiet vērā, ka dažas vienības (piemēram, sensorus) var izmantot tikai nosacījumiem, nevis darbībām.",
+              "included_number": "{number}/{total} izvēlēti"
+            }
+          }
+        }
+      }
+    }
+  }
