@@ -1,4 +1,5 @@
 import * as cs from './languages/cs.json';
+import * as lv from './languages/lv.json';
 import * as de from './languages/de.json';
 import * as en from './languages/en.json';
 import * as es from './languages/es.json';
@@ -22,6 +23,7 @@ import * as zh_Hans from './languages/zh-Hans.json';
 import { FrontendTranslationData } from 'custom-card-helpers';
 
 const languages: any = {
+  lv: lv,
   cs: cs,
   de: de,
   en: en,
