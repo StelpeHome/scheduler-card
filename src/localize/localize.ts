@@ -60,10 +60,10 @@ export function localize(
   try {
     if (locale.language == 'test') return 'TRANSLATED';
     translated = string.split('.').reduce((o, i) => o[i], languages[locale.language]);
-    if (!translated) translated = string.split('.').reduce((o, i) => o[i], languages['en']);
+    if (!translated) translated = string.split('.').reduce((o, i) => o[i], languages['lv']);
   } catch (e) {
     try {
-      translated = string.split('.').reduce((o, i) => o[i], languages['en']);
+      translated = string.split('.').reduce((o, i) => o[i], languages['lv']);
     } catch (e) {
       translated = '';
     }
